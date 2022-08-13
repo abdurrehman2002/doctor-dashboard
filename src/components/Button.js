@@ -1,11 +1,12 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
-function Button() {
+function CSButton(props) {
     return (
-        <div>
-            <button className='btn'><span>+</span>Sign up</button>
-        </div>
+        <Button as="a" variant="primary">
+            {props.title} {props.icon}
+        </Button>
     );
 }
 
-export default Button;
+export default CSButton;
