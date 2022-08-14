@@ -2,8 +2,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
+import Router from './Router';
 
-import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
-      <div><Signup /></div>
+      <Router/>
     </ThemeProvider>
 
   );
