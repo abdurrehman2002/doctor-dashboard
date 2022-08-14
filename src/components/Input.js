@@ -5,7 +5,7 @@ function Input({ inputType, placeholder, inputFor }) {
     return (
         <>
         <Form.Group className="mb-3" controlId={inputFor}>
-            <Form.Control type={inputType} placeholder={placeholder} />
+            <Form.Control type={inputType} placeholder={placeholder} className="form-input" />
         </Form.Group>
         </>
     );

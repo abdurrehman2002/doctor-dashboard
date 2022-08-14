@@ -2,9 +2,9 @@ import React from 'react';
 import LogImg from '../assets/images/logo.svg'
 
 
-function Logo() {
+function Logo(props) {
     return (
-        <div>
+        <div style={{marginBottom:props.marginBottom}}>
             <img src={LogImg} alt={"logo"}  />
         </div>
     );
