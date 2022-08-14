@@ -26,7 +26,7 @@ const Signin = () => {
                         <CSButton style={{ marginBottom: "50px" }} title={"Sign in"} icon={<i class="fa fa-sign-in"></i>} fontSize="15px" iconfontSize="20px" titlefontSize="20px" />
                     </Form>
 
-                    <Link style={{textDecoration:"none", marginBottom:"100px"}} to="/forgot-password">Forgot password?</Link>
+                    <Link style={{ textDecoration: "none", marginBottom: "100px" }} to="/forgot-password">Forgot password?</Link>
                     <div className='Signinlink' style={{ display: "flex" }}>
                         <p>Don't have an account?</p>
                         <Link to="/sign-up">Sign up!</Link>
