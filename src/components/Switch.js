@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Form } from 'react-bootstrap';
 
-function Switch({text,id,defaultValue}) {
+function Switch({text,id,defaultValue,handleSwitch}) {
     return (
         <>
             <Form.Group as={Row} className="mb-4">
@@ -11,7 +11,7 @@ function Switch({text,id,defaultValue}) {
                                     id={id}
                                     label={text}
                                     defaultChecked={defaultValue}
-                                    // onChange={handleChange}
+                                    onChange={(e) => handleSwitch(e)}
                                 />
                             </Col>
                         </Form.Group>

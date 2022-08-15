@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import { Container, Row, Col, Form } from 'react-bootstrap';
 
 import signuprightImg from '../assets/images/signup-right-side.jpeg';
 import { CSButton, Switch, PageHeading, Input, Logo } from '../components';
+import { SendPostRequest } from '../http';
 
 import {
     Link
@@ -9,6 +11,49 @@ import {
 
 
 const Signup = () => {
+
+    const [userRegistration, setUserRegistration] = useState({
+        name: "",
+        email: "",
+        password: "",
+        term_condition: false,
+    });
+
+    const handleNameInput = (e) => {
+        const value = e.target.value;
+
+        setUserRegistration({ ...userRegistration, name : value })
+    }
+    
+    const handleEmailInput = (e) => {
+        const value = e.target.value;
+
+        setUserRegistration({ ...userRegistration, email : value })
+    }
+    const handlePasswordInput = (e) => {
+        const value = e.target.value;
+
+        setUserRegistration({ ...userRegistration, password : value })
+    }
+    console.log("name", userRegistration.name);
+    console.log("email", userRegistration.email);
+    console.log("password", userRegistration.password);
+
+
+    const handleSwitch = (e) =>{
+        const value = e.target.checked
+        setUserRegistration({ ...userRegistration, term_condition : value })
+        
+    }
+
+
+    async function signUpBtnClick() {
+        console.log("Clicked on sign up button")
+        const response = await SendPostRequest("/users", userRegistration)
+        console.log('hhelo', response)
+    }
+
+
     return (
 
         <Container fluid className="p-0 overflow-hide">
@@ -19,12 +64,24 @@ const Signup = () => {
 
                     <PageHeading heading={"Sign Up"} />
                     <p>Create your Account</p>
-                    <Form>
-                        <Input inputType={"text"} placeholder={"Name"} inputFor={"name"} />
-                        <Input inputType={"email"} placeholder={"Email"} inputFor={"email"} />
-                        <Input inputType={"password"} placeholder={"Password"} inputFor={"password"} />
-                        <Switch text={"I agree to the Terms and Privacy"} defaultValue={true} id={"term-conditions"} />
-                        <CSButton style={{ marginBottom: "50px" }} title={"signup"} icon={"+"} fontSize="15px" iconfontSize="20px" titlefontSize="20px" />
+
+                    <Form onClick={signUpBtnClick}>
+                        <Input inputType={"text"} placeholder={"Name"} inputFor={"name"}
+
+                            handleInput={handleNameInput}
+                        />
+                        <Input inputType={"email"} placeholder={"Email"} inputFor={"email"}
+                            handleInput={handleEmailInput}
+                        />
+                        <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
+                            handleInput={handlePasswordInput}
+                        />
+                        <Switch text={"I agree to the Terms and Privacy"} defaultValue={false} id={"term-conditions"} handleSwitch={handleSwitch} />
+                        <CSButton
+                            style={{ marginBottom: "50px" }} title={"signup"} icon={"+"}
+                            fontSize="15px" iconfontSize="20px" titlefontSize="20px"
+                        
+                        />
                     </Form>
 
                     <div className='Signinlink' style={{ display: "flex" }}>
