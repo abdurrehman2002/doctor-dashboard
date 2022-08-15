@@ -19,31 +19,20 @@ const Signup = () => {
         term_condition: false,
     });
 
-    const handleNameInput = (e) => {
+    const handleInput = (e) => {
         const value = e.target.value;
+        const name = e.target.name;
 
-        setUserRegistration({ ...userRegistration, name : value })
+        userRegistration[name] = value
+        setUserRegistration({ ...userRegistration })
     }
-    
-    const handleEmailInput = (e) => {
-        const value = e.target.value;
-
-        setUserRegistration({ ...userRegistration, email : value })
-    }
-    const handlePasswordInput = (e) => {
-        const value = e.target.value;
-
-        setUserRegistration({ ...userRegistration, password : value })
-    }
-    console.log("name", userRegistration.name);
-    console.log("email", userRegistration.email);
-    console.log("password", userRegistration.password);
+    console.log("userRegistration", userRegistration);
 
 
-    const handleSwitch = (e) =>{
+    const handleSwitch = (e) => {
         const value = e.target.checked
-        setUserRegistration({ ...userRegistration, term_condition : value })
-        
+        setUserRegistration({ ...userRegistration, term_condition: value })
+
     }
 
 
@@ -65,22 +54,27 @@ const Signup = () => {
                     <PageHeading heading={"Sign Up"} />
                     <p>Create your Account</p>
 
-                    <Form onClick={signUpBtnClick}>
+                    <Form>
                         <Input inputType={"text"} placeholder={"Name"} inputFor={"name"}
-
-                            handleInput={handleNameInput}
+                            required={true}
+                            onChange={handleInput}
+                            name={"name"}
                         />
                         <Input inputType={"email"} placeholder={"Email"} inputFor={"email"}
-                            handleInput={handleEmailInput}
+                            required={true}
+                            onChange={handleInput}
+                            name={"email"}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
-                            handleInput={handlePasswordInput}
+                            required={true}
+                            onChange={handleInput}
+                            name={"password"}
                         />
                         <Switch text={"I agree to the Terms and Privacy"} defaultValue={false} id={"term-conditions"} handleSwitch={handleSwitch} />
-                        <CSButton
+                        <CSButton onClick={signUpBtnClick}
                             style={{ marginBottom: "50px" }} title={"signup"} icon={"+"}
                             fontSize="15px" iconfontSize="20px" titlefontSize="20px"
-                        
+
                         />
                     </Form>
 
