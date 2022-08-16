@@ -8,7 +8,8 @@ import {
 
 import {
     Signup,
-    Signin
+    Signin,
+    MedicHomePage
 } from './pages'
 
 
@@ -19,6 +20,7 @@ export default function Router() {
                 <Route path="/" element={<Signup />} />
                 <Route path="/sign-up" element={<Signup />} />
                 <Route path="/sign-in" element={<Signin />} />
+                <Route path="/MedicHomePage" element={<MedicHomePage />} />
             </Routes>
         </BrowserRouter>
     );

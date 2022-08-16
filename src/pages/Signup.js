@@ -51,21 +51,24 @@ const Signup = () => {
                 <Col lg={4} className="p-5 left-section">
                     <Logo marginBottom="80px" />
 
-                    <PageHeading heading={"Sign Up"} />
+                    <PageHeading heading={"Sign Up"} fontSize={"25px"} fontWeight={"bold"} />
                     <p>Create your Account</p>
 
                     <Form>
                         <Input inputType={"text"} placeholder={"Name"} inputFor={"name"}
+                            padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"name"}
                         />
                         <Input inputType={"email"} placeholder={"Email"} inputFor={"email"}
+                            padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"email"}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
+                            padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"password"}
@@ -74,7 +77,7 @@ const Signup = () => {
                         <CSButton onClick={signUpBtnClick}
                             style={{ marginBottom: "50px" }} title={"signup"} icon={"+"}
                             fontSize="15px" iconfontSize="20px" titlefontSize="20px"
-
+                            color={'#fff'}
                         />
                     </Form>
 
