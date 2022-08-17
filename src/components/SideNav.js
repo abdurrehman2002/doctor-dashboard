@@ -3,12 +3,20 @@ import Nav from 'react-bootstrap/Nav';
 function SideNav() {
   return (
     <Nav className="flex-column sideNav" >
-      <Nav.Link href="/home" className='p-0 pb-2' style={{color:"black"}}>Dashboard</Nav.Link>
-      <Nav.Link className='p-0 pb-2'>Appointments</Nav.Link>
-      <Nav.Link className='p-0 pb-2'>Doctors</Nav.Link>
-      <Nav.Link className='p-0 pb-2'>Departments</Nav.Link>
-      <Nav.Link className='p-0 pb-2'>Patients</Nav.Link>
-      <Nav.Link className='p-0 pb-2' >Payments</Nav.Link>
+      <div>
+        <Nav.Link href="/Dashboard" className='SideNavDashboard' >
+          <i class="fa fa-thermometer-half"></i>Dashboard</Nav.Link>
+        <Nav.Link href="/Appointments"  className='SideNavDashboard'>
+          <i class="fa fa-stethoscope"></i>Appointments</Nav.Link>
+        <Nav.Link className='SideNavDashboard'>
+          <i class="fa fa-user-md"></i>Doctors</Nav.Link>
+        <Nav.Link className='SideNavDashboard'>
+          <i class="fa fa-user-md"></i>Departments</Nav.Link>
+        <Nav.Link className='SideNavDashboard'>
+          <i class="fa fa-wheelchair"></i>Patients</Nav.Link>
+        <Nav.Link className='SideNavDashboard' >
+          <i class="fa fa-credit-card"></i>Payments</Nav.Link>
+      </div>
     </Nav>
   );
 }

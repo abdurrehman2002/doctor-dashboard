@@ -72,7 +72,7 @@ const Signin = () => {
 
                     <div className='Signinlink' style={{ display: "flex" }}>
                         <p>Go to Dashboard</p>
-                        <Link to="/MedicHomePage">MedicHomePage!</Link>
+                        <Link to="/HomePage">HomePage!</Link>
                     </div>
 
                 </Col>

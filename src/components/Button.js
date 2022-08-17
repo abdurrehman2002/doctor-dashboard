@@ -10,7 +10,7 @@ function CSButton(props) {
                 color: props.color, width: props.width, margin: 0,
                 backgroundColor:props.backgroundColor
                 
-            }}>{props.title}</p>
+            }}>{props.title} </p><i class={props.iconRight}></i> 
         </Button>
     );
 }

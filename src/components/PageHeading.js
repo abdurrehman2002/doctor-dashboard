@@ -6,7 +6,7 @@ function PageHeading(props) {
         <div>
             <h3 style={{
                 fontSize: props.fontSize, fontWeight: props.fontWeight, color: props.color,
-                marginBottom: props.marginBottom, marginTop: props.marginTop
+                marginBottom:props.marginBottom, marginLeft:props.marginLeft, marginTop: props.marginTop
             }} >{props.heading}</h3>
         </div>
     );

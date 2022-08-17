@@ -1,25 +1,23 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Logo, SideNav, SideNavDropdown, PageHeading, Header, HomeCard } from '../components';
+import { Logo, SideNav, PageHeading, Header, HomeCard } from '../components';
 
 
-function MedicHomePage(props) {
+function HomePage(props) {
   return (
     <Container fluid className="p-0 overflow-hide">
       <Row>
-        <Col lg={3} className="p-5 overflow-scroll">
+        <Col lg={3} className="p-5 ">
           <Logo marginBottom="60px" />
           <PageHeading heading={"MEDICINE"} marginBottom={"20px"} fontSize={"16px"} color={"#b3b3b3"} />
           <SideNav />
-          <PageHeading heading={"UI KIT"} fontSize={"18px"} color={"#b3b3b3"} marginTop={"30px"} />
-          <SideNavDropdown title={"Components"} />
         </Col>
 
 
 
         <Col lg={9} className="p-0">
           <Header />
-          <PageHeading heading={"Pricing"} fontSize={"45px"} fontWeight={"bold"} />
+          <PageHeading heading={"Pricing"} marginLeft={"30px"} fontSize={"45px"} fontWeight={"bold"} />
 
           <Row className='p-4'>
             <Col lg={4}>
@@ -46,4 +44,4 @@ function MedicHomePage(props) {
   );
 }
 
-export default MedicHomePage;
+export default HomePage;

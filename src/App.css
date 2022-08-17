@@ -32,30 +32,35 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.btn{
+.btn {
   display: flex;
   text-align: center;
   align-items: center;
   padding: 10px 20px;
 }
-.signuprightimg img{
+
+.signuprightimg img {
   width: 100%;
   height: 680px;
 }
-.overflow-hide{
+
+.overflow-hide {
   overflow: hidden;
 }
-.left-section p{
+
+.left-section p {
   margin-bottom: 20px;
   color: #6c7780;
   font-size: 12px;
 }
-.form-input{
+
+.form-input {
   border-radius: 20px;
   background-color: #ebebeb;
   border: none;
@@ -63,9 +68,11 @@
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 20px;
+  position: relative;
 
 }
-.switch-button label{
+
+.switch-button label {
   font-size: 14px;
 }
 
@@ -73,105 +80,277 @@
 .Signinlink {
   display: flex;
 }
-.Signinlink p{
+
+.Signinlink p {
   color: #262422;
   font-size: 15px;
 }
-.Signinlink a{
+
+.Signinlink a {
   text-decoration: none;
   font-size: 15px;
   margin-left: 5px;
 
 }
 
+.inputSearchIcon {
+  margin-bottom: 20px;
+  position: absolute;
+  right: 35px;
+  color: #b3b3b3;
+  font-weight: lighter;
+}
+
+
+.Textcolor{
+  color: red;
+}
 
 
 
 
 
 
-.HomeCard{
+.HomeCard {
   width: 100%;
   box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
   border: none;
   margin-top: 20px;
 }
-.HomeCardTitle{
+
+.HomeCardTitle {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 15px;
 }
-.HomeCardAmount{
+
+.HomeCardAmount {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.HomeCardAmount h5{
+
+.HomeCardAmount h5 {
   font-size: 60px;
   font-weight: 300;
 
 }
+
 .HomeCardAmountMonth {
   text-align: left;
   margin-left: 10px;
 }
-.HomeCardAmountMonth h6{
+
+.HomeCardAmountMonth h6 {
   font-size: 18px;
   font-weight: 500;
   color: #6c757d;
 }
 
-.HomeCardAmountMonth p{
+.HomeCardAmountMonth p {
   font-size: 15px;
   font-weight: 400;
   color: #6c757d;
 }
 
-.HomeCard hr{
+.HomeCard hr {
   width: 250px;
   margin-bottom: 30px;
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.HomeCardBody ul li{
+
+.HomeCardBody ul li {
   margin-bottom: 25px;
   font-size: 15px;
   font-weight: 400;
   list-style: none;
 }
 
-
-.headerWrapper{
+.headerWrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.DropdownWrapper{
+
+.DropdownWrapper {
   display: flex;
   margin-right: 25px;
   margin-bottom: 20px;
 }
-.HeaderNotifications{
-  margin-right: 20px;
+
+.Profileicons i:hover {
+  background-color: #336cfb;
+  color: white;
 }
-.Profileicons i{
+
+.profileText:hover {
+  color: #336cfb;
+}
+
+.Profileicons i {
   background-color: #e8e8e8;
   padding: 8px;
   border-radius: 50%;
 }
-.headerProfileImg img{
+
+.headerProfileImg img {
   width: 35px;
   height: 35px;
 }
 
-.DropdownToggle{
+.DropdownToggle {
   width: 20px;
   background: none;
   color: black;
   border: none;
   padding: 0px;
   padding-top: 20px;
+}
+
+.DropdownToggleNotification i {
+  font-size: 30px;
+  margin-top: 5px;
+  color: #6c757d;
+}
+
+.DropdownToggleNotification {
+  width: 20px;
+  background: none;
+  color: #6c757d;
+  border: none;
+  padding: 0px;
+  margin-right: 20px;
+  text-align: center;
+  /* padding-top: 20px; */
+}
+
+.DropdownToggleNotification::after {
+  display: none;
+}
+
+.HeaderNotifications {
+  margin-right: 20px;
+}
+
+.NotificationDropdownHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.NotificationDropdownHeading h2 {
+  font-size: 18px;
+}
+
+.NotificationDropdownHeading p {
+  font-size: 12px;
+  cursor: pointer;
+  color: red;
+}
+
+.notification:hover {
+  color: #336cfb;
+}
+
+.notification {
+  display: flex;
+}
+
+.Notificatonicons i:hover {
+  color: white;
+  background-color: #336cfb;
+}
+
+.Notificatonicons i {
+  background-color: #e8e8e8;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.notificationText p {
+  margin-left: 15px;
+  padding: 0;
+  font-size: 10px;
+  opacity: 80%;
+}
+
+.notificationText:hover {
+  color: #336cfb;
+}
+
+.notificationText {
+  font-size: 12px;
+}
+
+
+
+
+
+.SideNavDashboard:hover {
+  color: #336cfb;
+}
+
+.SideNavDashboard i:hover {
+  color: #336cfb;
+}
+
+.SideNavDashboard {
+  margin-bottom: 10px;
+  padding: 0px;
+  color: black;
+}
+
+.SideNavDashboard i {
+  margin-right: 10px;
+  color: #b3b3b3;
+}
+
+
+.DashboardCard {
+  width: 100%;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+  border: none;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.DashboardCardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DashboardCardIcon {
+  color: #336cfb;
+  margin-right: 30px;
+  font-size: 48px;
+  opacity: 60%;
+}
+
+.DashboardCardTitle {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.DashboardCardText {
+  font-size: 20px;
+  color: #336efb;
+
+}
+
+.appointmentProfileImg img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+.appointmentTableHeader{
+  font-size: 15px;
+  font-weight: 300;
+  background-color: #e8e8e8;
+  color: red;
+  border: none;
 }
