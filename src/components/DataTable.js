@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { ModalButton } from '.';
 import userProfile from '../assets/images/userProfile.jpg';
-import { SendPutRequest } from '../http';
+import { SendPutRequest, SendDeleteRequest } from '../http';
 
 
 function DataTable(props) {
@@ -31,17 +31,35 @@ function DataTable(props) {
         setAddAppointment({ ...appointmentData[ind] })
         console.log(addAppointment)
         setShow(true)
-
-
     }
+
+
+    const handleDelete = async (index) => {
+        console.log("appointmentData", appointmentData[index])
+        const response = await SendDeleteRequest(`/appointment/${appointmentData[index].id}`)
+        console.log(response)
+        if (response.status === 200) {
+            appointmentData.splice(index, 1)
+            setAddAppointment({ ...appointmentData })
+        }
+
+
+
+        // getAppointments();
+    }
+
+
+
+
+
     const updateAppointmentClick = async () => {
         const response = await SendPutRequest(`/appointment/${addAppointment.id}`, addAppointment)
         console.log(response)
         getAppointments();
         setShow(false)
-
-
     }
+
+
 
     return (
         <div className='TableWrapper'>
@@ -81,7 +99,7 @@ function DataTable(props) {
                                                 <div className='editAction' onClick={() => handleEdit(ind)} >
                                                     <i class="fa fa-pencil" ></i>
                                                 </div>
-                                                <div className='deleteAction'>
+                                                <div className='deleteAction' onClick={() => handleDelete(ind)} >
                                                     <i class="fa fa-trash-o"></i>
                                                 </div>
                                             </div>

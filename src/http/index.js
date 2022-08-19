@@ -52,3 +52,16 @@ export async function SendPutRequest(endpoint, data) {
 }
 
 
+
+export async function SendDeleteRequest(endpoint) {
+    return await axios.delete(server + endpoint )
+        .then(function (response) {
+            return response;
+        })
+        .catch(function (error) {
+            console.log("error", error)
+            return error;
+        });
+}
+
+
