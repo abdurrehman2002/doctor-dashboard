@@ -35,7 +35,6 @@ const Signup = () => {
 
     }
 
-
     async function signUpBtnClick() {
         console.log("Clicked on sign up button")
         const response = await SendPostRequest("/users", userRegistration)
@@ -60,18 +59,21 @@ const Signup = () => {
                             required={true}
                             onChange={handleInput}
                             name={"name"}
+                            InputCSS={"form-input "}
                         />
                         <Input inputType={"email"} placeholder={"Email"} inputFor={"email"}
                             padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"email"}
+                            InputCSS={"form-input "}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
                             padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"password"}
+                            InputCSS={"form-input "}
                         />
                         <Switch text={"I agree to the Terms and Privacy"} defaultValue={false} id={"term-conditions"} handleSwitch={handleSwitch} />
                         <CSButton onClick={signUpBtnClick}

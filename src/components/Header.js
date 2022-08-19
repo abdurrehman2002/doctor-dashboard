@@ -14,6 +14,7 @@ function Header(props) {
           <Input inputType={"search"} placeholder={"Type page's title"}
             padding={"10px 100px 10px 20px"}
             searchIcon={"fa fa-search "}
+            InputCSS={"form-input "}
           />
           </div>
           

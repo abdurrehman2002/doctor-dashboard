@@ -36,3 +36,19 @@ export async function SendGetRequest(endpoint, data) {
             return error;
         });
 }
+
+
+export async function SendPutRequest(endpoint, data) {
+    return await axios.put(server + endpoint, data, {
+        headers: headers
+    })
+        .then(function (response) {
+            return response;
+        })
+        .catch(function (error) {
+            console.log("error", error)
+            return error;
+        });
+}
+
+

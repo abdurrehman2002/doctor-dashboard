@@ -51,12 +51,14 @@ const Signin = () => {
                             required={true}
                             onChange={handleInput}
                             name={"email"}
+                            InputCSS={"form-input "}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
                             padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"password"}
+                            InputCSS={"form-input "}
                         />
                         <Switch text={"Remember me"} defaultValue={true} id={"term-conditions"} />
                         <CSButton onClick={signInBtnClick}

@@ -12,6 +12,9 @@ export { default as SideNavDropdown } from './SideNavDropdown';
 export { default as HomeCard } from './HomeCard';
 export { default as DashboardCard } from './DashboardCard';
 export { default as DataTable } from './DataTable';
+export { default as ModalButton } from './ModalButton';
+
+
 
 
 
