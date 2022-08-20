@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import { Logo, SideNav, Header, PageHeading, DataTable, ModalButton } from '../components';
+import { Logo, SideNav, Header, PageHeading, AppointmentsDataTable, ModalButton } from '../components';
 import { SendPostRequest, SendGetRequest } from '../http';
 
 
 
 function Appointments() {
     const [appointmentData, setAppointmentData] = useState([])
+
     const [show, setShow] = useState(false);
 
 
@@ -43,11 +44,9 @@ function Appointments() {
         const response = await SendGetRequest("/appointment")
         setAppointmentData(response.data)
         console.log("response", response)
-
-
-
-
     }
+
+
 
     return (
         <Container fluid className="p-0 overflow-hide">
@@ -67,7 +66,13 @@ function Appointments() {
                     <PageHeading heading={"Appointments"} marginBottom={"40px"}
                         marginLeft={"17px"} fontSize={"40px"} fontWeight={"bold"} />
 
-                    <DataTable appointmentData={appointmentData} getAppointments={getAppointments} />
+                    <AppointmentsDataTable
+                        tableColumData={["Photo", "Name", "Email",
+                         "Date", "Visit time", "Number", "Doctor", "Injury/Condition", "Action" ]}
+                        appointmentData={appointmentData}
+                        getAppointments={getAppointments}
+                    />
+
                     <div className='ModalWrapper'>
                         <Button variant="primary" onClick={() => setShow(true)} className="ModalButton">
                             <i class="fa fa-stethoscope" aria-hidden="true"></i>

@@ -4,9 +4,9 @@ function SideNav() {
   return (
     <Nav className="flex-column sideNav" >
       <div>
-        <Nav.Link href="/Dashboard" className='SideNavDashboard' >
+        <Nav.Link href="/dashboard" className='SideNavDashboard' >
           <i class="fa fa-thermometer-half"></i>Dashboard</Nav.Link>
-        <Nav.Link href="/Appointments"  className='SideNavDashboard'>
+        <Nav.Link href="/appointments"  className='SideNavDashboard'>
           <i class="fa fa-stethoscope"></i>Appointments</Nav.Link>
         <Nav.Link className='SideNavDashboard'>
           <i class="fa fa-user-md"></i>Doctors</Nav.Link>

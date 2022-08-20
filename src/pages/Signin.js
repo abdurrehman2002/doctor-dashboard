@@ -74,7 +74,7 @@ const Signin = () => {
 
                     <div className='Signinlink' style={{ display: "flex" }}>
                         <p>Go to Dashboard</p>
-                        <Link to="/HomePage">HomePage!</Link>
+                        <Link to="/homePage">HomePage!</Link>
                     </div>
 
                 </Col>

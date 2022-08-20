@@ -7,7 +7,8 @@ import { SendPutRequest, SendDeleteRequest } from '../http';
 
 function DataTable(props) {
 
-    const { appointmentData, getAppointments } = props
+    const { appointmentData, getAppointments, tableColumData } = props
+
     const [show, setShow] = useState(false);
 
 
@@ -42,10 +43,6 @@ function DataTable(props) {
             appointmentData.splice(index, 1)
             setAddAppointment({ ...appointmentData })
         }
-
-
-
-        // getAppointments();
     }
 
 
@@ -66,17 +63,17 @@ function DataTable(props) {
             <Table className='table' >
                 <thead>
                     <tr>
-                        <th class="">Photo</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Date</th>
-                        <th>Visit time</th>
-                        <th>Number</th>
-                        <th>Doctor</th>
-                        <th>Injury/Condition</th>
-                        <th>Action</th>
+                        {
+                            tableColumData && tableColumData.map((item, ind) => {
+                                console.log(item)
+                                return (
+                                    <th class="">{item}</th>
+                                )
+                            })
+                        }
                     </tr>
                 </thead>
+
                 <tbody>
                     {
                         appointmentData && appointmentData.map((item, ind) => {
