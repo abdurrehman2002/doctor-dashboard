@@ -28,12 +28,19 @@ const Signin = () => {
 
 
     async function signInBtnClick() {
-        console.log("Clicked on sign in button")
-        console.log("loginRegistration", loginRegistration);
-        const response = await SendGetRequest("/users", loginRegistration)
-        console.log("response", response)
-
+        if (loginRegistration.email === "") {
+            alert("Enter email");
+        }
+        if (loginRegistration.password === "") {
+            alert("Enter password");
+        } else {
+            console.log("Clicked on sign in button")
+            console.log("loginRegistration", loginRegistration);
+            const response = await SendGetRequest("/users", loginRegistration)
+            console.log("response", response)
+        }
     }
+
 
     return (
 
@@ -51,12 +58,14 @@ const Signin = () => {
                             required={true}
                             onChange={handleInput}
                             name={"email"}
+                            InputCSS={"form-input "}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
                             padding={"10px 10px 10px 20px"}
                             required={true}
                             onChange={handleInput}
                             name={"password"}
+                            InputCSS={"form-input "}
                         />
                         <Switch text={"Remember me"} defaultValue={true} id={"term-conditions"} />
                         <CSButton onClick={signInBtnClick}
@@ -72,7 +81,7 @@ const Signin = () => {
 
                     <div className='Signinlink' style={{ display: "flex" }}>
                         <p>Go to Dashboard</p>
-                        <Link to="/HomePage">HomePage!</Link>
+                        <Link to="/homePage">HomePage!</Link>
                     </div>
 
                 </Col>

@@ -60,16 +60,18 @@
   font-size: 12px;
 }
 
+.form-input:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
 .form-input {
   border-radius: 20px;
   background-color: #ebebeb;
   border: none;
-  /* padding: 10px 10px 10px 20px; */
   font-size: 15px;
   font-weight: 300;
   margin-bottom: 20px;
   position: relative;
-
 }
 
 .switch-button label {
@@ -102,7 +104,7 @@
 }
 
 
-.Textcolor{
+.Textcolor {
   color: red;
 }
 
@@ -341,16 +343,697 @@
 
 }
 
-.appointmentProfileImg img{
+.appointmentProfileImg img {
   width: 35px;
   height: 35px;
   border-radius: 50px;
 }
 
-.appointmentTableHeader{
+
+.TableWrapper {
+  padding: 0px;
+  padding: 0px 17px;
+}
+
+.DataTableHeader {
   font-size: 15px;
   font-weight: 300;
   background-color: #e8e8e8;
   color: red;
   border: none;
+}
+
+.table tr {
+  border-style: none !important;
+  border-color: white;
+}
+
+.table thead {
+  font-size: 13px;
+  background-color: #e8e8e8;
+  /* border-style: none !important; */
+  border-color: white;
+}
+
+.table th {
+  /* border-style: none !important; */
+  border-color: white;
+
+}
+
+.table td {
+  /* border-style: none !important; */
+  border-color: white;
+  background-color: #f9f9f9;
+
+}
+
+
+
+.tableName {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.tableBlueCol {
+  color: #336cfb;
+  font-size: 13px;
+}
+
+.tableNumber i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #336cfb;
+
+}
+
+.tableNumber p {
+  margin: 0;
+  font-size: 14px;
+  color: #336cfb;
+}
+
+.tableNumber {
+  display: flex;
+  flex-direction: row;
+  height: 57px;
+}
+
+.tableBlueCol span {
+  font-size: 18px;
+}
+
+.date {
+  font-size: 14px;
+  color: #8d8b8b;
+}
+
+.visit-time {
+  color: #8d8b8b;
+  font-size: 14px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.doctor {
+  font-size: 14px;
+}
+
+.codition {
+  font-size: 14px;
+}
+
+.TableActionicons {
+  display: flex;
+  flex-direction: row;
+}
+
+.editAction i {
+  padding: 12px;
+}
+
+.deleteAction i {
+  padding: 12px;
+}
+
+.editAction {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #64b4f5;
+  color: black;
+  margin-right: 5px;
+}
+
+.deleteAction {
+  cursor: pointer;
+  background-color: #ed5564;
+  border-radius: 50%;
+  color: white;
+}
+
+.ModalButton {
+  right: 0px;
+  top: 0px;
+  border-radius: 50%;
+  padding: 0 !important;
+  box-shadow: 0px 0px 12px 2px rgba(50, 118, 199, 0.75);
+}
+
+.ModalButton i {
+  font-size: 40px;
+  padding: 18px 23px;
+
+}
+
+
+
+.ModalWrapper {
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 30px 0px;
+}
+
+
+.modalAddImage {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.modalAddImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px !important;
+  margin-right: 20px;
+}
+
+.modalImageButton:hover {
+  background-color: #336cfb;
+}
+
+.modalImageButton {
+  outline: #336cfb;
+  background-color: white;
+  color: #336cfb;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.modalImageButton i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.modal-Input:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.modal-Input {
+  border-radius: 20px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 300px;
+  position: relative;
+
+}
+
+.modal-TimeInput:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.modal-TimeInput {
+  border-radius: 20px;
+  width: 220px;
+  font-weight: 300px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.modalFooterButton {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ModalCancelButton {
+  background-color: #ed5564;
+  border: none;
+}
+
+.ModalCancelButton:hover {
+  background-color: #dd4454;
+}
+
+.ModalAddButton:hover {
+  background-color: #559ad3;
+  cursor: pointer;
+  color: black;
+}
+
+.ModalAddButton {
+  background-color: #64b4f5;
+  border: none;
+  color: black;
+}
+
+
+
+
+
+
+
+.variants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.variants>div {
+  margin-right: 5px;
+}
+
+.variants>div:last-of-type {
+  margin-right: 0;
+}
+
+.file {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file>input[type='file'] {
+  display: none
+}
+
+.file>label {
+  font-size: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  /* user-select: none; */
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 29%);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file>label:hover {
+  border-color: hsl(0, 0%, 21%);
+}
+
+.file>label:active {
+  background-color: hsl(0, 0%, 96%);
+}
+
+.file>label>i {
+  padding-right: 5px;
+}
+
+.file--upload>label {
+  color: hsl(204, 86%, 53%);
+  border-color: hsl(204, 86%, 53%);
+}
+
+.file--upload>label:hover {
+  border-color: hsl(204, 86%, 53%);
+  background-color: hsl(204, 86%, 96%);
+}
+
+.file--upload>label:active {
+  background-color: hsl(204, 86%, 91%);
+}
+
+.file--uploading>label {
+  color: hsl(48, 100%, 67%);
+  border-color: hsl(48, 100%, 67%);
+}
+
+.file--uploading>label>i {
+  animation: pulse 5s infinite;
+}
+
+.file--uploading>label:hover {
+  border-color: hsl(48, 100%, 67%);
+  background-color: hsl(48, 100%, 96%);
+}
+
+.file--uploading>label:active {
+  background-color: hsl(48, 100%, 91%);
+}
+
+.file--success>label {
+  color: hsl(141, 71%, 48%);
+  border-color: hsl(141, 71%, 48%);
+}
+
+.file--success>label:hover {
+  border-color: hsl(141, 71%, 48%);
+  background-color: hsl(141, 71%, 96%);
+}
+
+.file--success>label:active {
+  background-color: hsl(141, 71%, 91%);
+}
+
+.file--danger>label {
+  color: hsl(348, 100%, 61%);
+  border-color: hsl(348, 100%, 61%);
+}
+
+.file--danger>label:hover {
+  border-color: hsl(348, 100%, 61%);
+  background-color: hsl(348, 100%, 96%);
+}
+
+.file--danger>label:active {
+  background-color: hsl(348, 100%, 91%);
+}
+
+.file--disabled {
+  cursor: not-allowed;
+}
+
+.file--disabled>label {
+  border-color: #e6e7ef;
+  color: #e6e7ef;
+  pointer-events: none;
+}
+
+
+
+.AddDoctorButton {
+  right: 0px;
+  top: 0px;
+  border-radius: 50%;
+  padding: 0 !important;
+  /* box-shadow: 0px 0px 12px 2px rgba(50,118,199,0.75); */
+}
+
+.AddDoctorButton i {
+  font-size: 40px;
+  padding: 20px 20px;
+}
+
+
+.DoctorCardWrapper {
+  border-radius: 10px;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.DoctorCard {
+  border: none;
+}
+
+.DoctorCardBody {
+  text-align: center;
+}
+
+.DoctorNameWrapper{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.DoctorName {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.DoctorSpecility {
+  margin-bottom: 25px;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.Social-links i {
+  margin-bottom: 25px;
+  color: black;
+  margin-left: 15px;
+  font-size: 25px;
+}
+
+.Social-links i:hover {
+  color: #336cfb;
+  cursor: pointer;
+}
+
+.DoctorAddress {
+  margin-bottom: 25px;
+  color: #717575;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.DoctorProfileBtn {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.ModalWrapper {
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 30px 0px;
+}
+
+
+.modalAddImage {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.modalAddImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px !important;
+  margin-right: 20px;
+}
+
+.modalImageButton:hover {
+  background-color: #336cfb;
+}
+
+.modalImageButton {
+  outline: #336cfb;
+  background-color: white;
+  color: #336cfb;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.modalImageButton i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+
+.AddDoctorButton:hover{
+  background-color: black;
+} 
+.AddDoctorButton {
+  right: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 50%;
+  padding: 0 !important;
+  background-color: black;
+}
+
+.AddDoctorButton i {
+  font-size: 35px;
+  padding: 20px 20px;
+
+}
+.AddDoctorButtonWrapper {
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 30px 0px;
+}
+
+
+.addDoctor-Input:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.addDoctor-Input {
+  border-radius: 20px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 300px;
+  position: relative;
+
+}
+
+.addDoctor-speciality:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.addDoctor-speciality {
+  border-radius: 20px;
+  width: 220px;
+  font-weight: 300px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.addDoctor-Gender .btn:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+
+}
+
+.addDoctor-Gender .btn {
+  border: none;
+  border-radius: 50px;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 300px;
+  background-color: #ebebeb;
+  color: black;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+
+.SocialLinkIcon i:hover {
+  color: white;
+}
+
+.SocialLinkIcon:hover {
+  background-color: #ed5564;
+
+}
+
+.SocialLinkIcon i {
+  padding: 12px;
+  font-size: 22px;
+  color: #ed5564;
+  text-align: center;
+}
+
+.SocialLinkIcon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ed5564;
+  border-radius: 50%;
+  color: white;
+}
+
+.SocialIconLink:hover{
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+
+}
+.SocialIconLink {
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 300px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.SocialNetworks h5 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.socialIconText {
+  display: flex;
+  border: 1px solid #6c757d;
+  width: 100%;
+  border-radius: 50px;
+  /* align-items: center; */
+}
+
+.socialIconText p {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.socialIconText i {
+  color: #6c7780;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.socialLinkWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addSocialNetworks {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.addSocialNetworks h5 {
+  font-size: 15px;
+}
+
+.AddDoctorHeader {
+  border: none;
+}
+
+.AddDoctorFooter {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+
+
+.doctorProfileImage {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.doctorProfileImage img {
+  width: 100px;
+  height: 100px;
+  border-radius: 500px !important;
+  margin-right: 20px;
+}
+
+.DoctorProfileSave:hover {
+  background-color: #b1cc50;
+  cursor: pointer;
+  color: black;
+}
+
+.DoctorProfileSave {
+  background-color: #b7ce63;
+  width: 100%;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+
+  justify-content: center;
+  border: none;
+  color: black;
 }

@@ -8,7 +8,6 @@ const headers = {
 
 
 export async function SendPostRequest(endpoint, data) {
-
     return await axios.post(server + endpoint, data, {
         headers: headers
     })
@@ -36,3 +35,32 @@ export async function SendGetRequest(endpoint, data) {
             return error;
         });
 }
+
+
+export async function SendPutRequest(endpoint, data) {
+    return await axios.put(server + endpoint, data, {
+        headers: headers
+    })
+        .then(function (response) {
+            return response;
+        })
+        .catch(function (error) {
+            console.log("error", error)
+            return error;
+        });
+}
+
+
+
+export async function SendDeleteRequest(endpoint) {
+    return await axios.delete(server + endpoint )
+        .then(function (response) {
+            return response;
+        })
+        .catch(function (error) {
+            console.log("error", error)
+            return error;
+        });
+}
+
+
