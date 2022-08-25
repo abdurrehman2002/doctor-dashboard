@@ -10,8 +10,6 @@ function DataTable(props) {
     const { appointmentData, getAppointments, tableColumData } = props
 
     const [show, setShow] = useState(false);
-
-
     const [addAppointment, setAddAppointment] = useState({
         id: '',
         image: '',
@@ -24,7 +22,6 @@ function DataTable(props) {
         doctor: "",
         injure: "",
     });
-
 
 
     const handleEdit = (ind) => {
@@ -46,14 +43,31 @@ function DataTable(props) {
     }
 
 
-
-
-
     const updateAppointmentClick = async () => {
-        const response = await SendPutRequest(`/appointment/${addAppointment.id}`, addAppointment)
-        console.log(response)
-        getAppointments();
-        setShow(false)
+        if (addAppointment.photo === "") {
+            alert("Enter photo");
+        } if (addAppointment.name === "") {
+            alert("Enter name");
+        } if (addAppointment.email === "") {
+            alert("Enter email");
+        } if (addAppointment.date === "") {
+            alert("Enter date");
+        } if (addAppointment.timeFrom === "") {
+            alert("Enter timeFrom");
+        } if (addAppointment.timeTo === "") {
+            alert("Enter timeTo");
+        } if (addAppointment.number === "") {
+            alert("Enter number");
+        } if (addAppointment.doctor === "") {
+            alert("Enter doctor");
+        } if (addAppointment.injure === "") {
+            alert("Enter injure");
+        } else {
+            const response = await SendPutRequest(`/appointment/${addAppointment.id}`, addAppointment)
+            console.log(response)
+            getAppointments();
+            setShow(false)
+        }
     }
 
 

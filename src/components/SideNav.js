@@ -8,9 +8,9 @@ function SideNav() {
           <i class="fa fa-thermometer-half"></i>Dashboard</Nav.Link>
         <Nav.Link href="/appointments"  className='SideNavDashboard'>
           <i class="fa fa-stethoscope"></i>Appointments</Nav.Link>
-        <Nav.Link className='SideNavDashboard'>
+        <Nav.Link href='/doctors' className='SideNavDashboard'>
           <i class="fa fa-user-md"></i>Doctors</Nav.Link>
-        <Nav.Link className='SideNavDashboard'>
+        <Nav.Link href='/Departments'  className='SideNavDashboard'>
           <i class="fa fa-user-md"></i>Departments</Nav.Link>
         <Nav.Link className='SideNavDashboard'>
           <i class="fa fa-wheelchair"></i>Patients</Nav.Link>

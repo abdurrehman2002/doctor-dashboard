@@ -28,12 +28,19 @@ const Signin = () => {
 
 
     async function signInBtnClick() {
-        console.log("Clicked on sign in button")
-        console.log("loginRegistration", loginRegistration);
-        const response = await SendGetRequest("/users", loginRegistration)
-        console.log("response", response)
-
+        if (loginRegistration.email === "") {
+            alert("Enter email");
+        }
+        if (loginRegistration.password === "") {
+            alert("Enter password");
+        } else {
+            console.log("Clicked on sign in button")
+            console.log("loginRegistration", loginRegistration);
+            const response = await SendGetRequest("/users", loginRegistration)
+            console.log("response", response)
+        }
     }
+
 
     return (
 

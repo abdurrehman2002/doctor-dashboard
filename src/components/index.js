@@ -13,6 +13,8 @@ export { default as HomeCard } from './HomeCard';
 export { default as DashboardCard } from './DashboardCard';
 export { default as AppointmentsDataTable } from './AppointmentsDataTable';
 export { default as ModalButton } from './ModalButton';
+export { default as AddDoctors } from './AddDoctors';
+export { default as DoctorsCard } from './DoctorsCard';
 
 
 

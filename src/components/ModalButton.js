@@ -9,10 +9,6 @@ function ModalButton({ show, setShow, addAppointment, setAddAppointment, addAppo
 
 
     const handleClose = () => setShow(false);
-    // const handleShow = () => setShow(true);
-
-
-
 
     const handleInput = (e) => {
         const value = e.target.value;
@@ -21,12 +17,6 @@ function ModalButton({ show, setShow, addAppointment, setAddAppointment, addAppo
         addAppointment[name] = value
         setAddAppointment({ ...addAppointment })
     }
-    // console.log("addAppointment", addAppointment);
-
-
-
-
-
 
     return (
         <>
@@ -39,14 +29,9 @@ function ModalButton({ show, setShow, addAppointment, setAddAppointment, addAppo
                     <div className='modalAddImage'>
                         <img alt='' src={modalAddImg} />
 
-                        {/* <Button className='modalImageButton'>
-                                Select Image <i class="fa fa-user"></i>
-                            </Button> */}
                         <div class="variants">
                             <div class='file'>
                                 <label for='input-file'>
-                                    {/* <i class="material-icons">cloud_queue
-                                        </i> */}
                                     Select a file
                                     <i class="fa fa-user "></i>
                                 </label>
@@ -64,7 +49,6 @@ function ModalButton({ show, setShow, addAppointment, setAddAppointment, addAppo
                             padding={"10px 10px 10px 20px"}
                             InputCSS={"modal-Input"}
                             onChange={handleInput}
-                            name={"name"}
                             value={addAppointment.name}
                         />
                         <Input inputType={"text"} placeholder={"Doctor"} inputFor={"doctor"}

@@ -8,7 +8,6 @@ const headers = {
 
 
 export async function SendPostRequest(endpoint, data) {
-
     return await axios.post(server + endpoint, data, {
         headers: headers
     })

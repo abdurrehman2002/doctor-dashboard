@@ -29,17 +29,36 @@ function Appointments() {
     }, [])
 
 
+
     async function addAppointmentClick() {
-        console.log("Clicked on Modal button")
-        const response = await SendPostRequest("/appointment", addAppointment)
-        console.log('addAppointment', response)
-        getAppointments();
-        setShow(false)
+        if (addAppointment.photo === "") {
+            alert("Enter photo");
+        } if (addAppointment.name === "") {
+            alert("Enter name");
+        } if (addAppointment.email === "") {
+            alert("Enter email");
+        } if (addAppointment.date === "") {
+            alert("Enter date");
+        } if (addAppointment.timeFrom === "") {
+            alert("Enter timeFrom");
+        } if (addAppointment.timeTo === "") {
+            alert("Enter timeTo");
+        } if (addAppointment.number === "") {
+            alert("Enter number");
+        } if (addAppointment.doctor === "") {
+            alert("Enter doctor");
+        } if (addAppointment.injure === "") {
+            alert("Enter injure");
+        } else {
+            console.log("Clicked on Modal button")
+            const response = await SendPostRequest("/appointment", addAppointment)
+            console.log('addAppointment', response)
+            getAppointments();
+            setShow(false)
+        }
     }
 
-
-
-
+    
     const getAppointments = async () => {
         const response = await SendGetRequest("/appointment")
         setAppointmentData(response.data)
@@ -68,7 +87,7 @@ function Appointments() {
 
                     <AppointmentsDataTable
                         tableColumData={["Photo", "Name", "Email",
-                         "Date", "Visit time", "Number", "Doctor", "Injury/Condition", "Action" ]}
+                            "Date", "Visit time", "Number", "Doctor", "Injury/Condition", "Action"]}
                         appointmentData={appointmentData}
                         getAppointments={getAppointments}
                     />
@@ -85,7 +104,6 @@ function Appointments() {
             </Row>
             <ModalButton show={show} setShow={setShow} addAppointment={addAppointment}
                 setAddAppointment={setAddAppointment} addAppointmentClick={addAppointmentClick} />
-
 
         </Container>
     );

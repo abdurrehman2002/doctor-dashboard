@@ -11,7 +11,10 @@ import {
     Signin,
     HomePage,
     Dashboard,
-    Appointments
+    Appointments,
+    Doctors,
+    DoctorProfilePage,
+    Departments
 } from './pages'
 
 
@@ -25,6 +28,9 @@ export default function Router() {
                 <Route path="/HomePage" element={<HomePage />} />
                 <Route path="/Dashboard" element={<Dashboard />} />
                 <Route path="/Appointments" element={<Appointments />} />
+                <Route path="/Doctors" element={<Doctors />} />
+                <Route path="/DoctorProfilePage/:id" element={<DoctorProfilePage />} />
+                <Route path="/Departments" element={<Departments />} />
             </Routes>
         </BrowserRouter>
     );

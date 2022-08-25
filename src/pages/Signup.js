@@ -12,6 +12,7 @@ import {
 
 const Signup = () => {
 
+
     const [userRegistration, setUserRegistration] = useState({
         name: "",
         email: "",
@@ -20,13 +21,14 @@ const Signup = () => {
     });
 
     const handleInput = (e) => {
+
         const value = e.target.value;
         const name = e.target.name;
-
         userRegistration[name] = value
         setUserRegistration({ ...userRegistration })
     }
-    console.log("userRegistration", userRegistration);
+    // console.log("userRegistration", userRegistration);
+
 
 
     const handleSwitch = (e) => {
@@ -35,10 +37,22 @@ const Signup = () => {
 
     }
 
+
     async function signUpBtnClick() {
-        console.log("Clicked on sign up button")
-        const response = await SendPostRequest("/users", userRegistration)
-        console.log('hhelo', response)
+        if (userRegistration.name === "") {
+            alert("Enter name");
+        } if (userRegistration.email === "") {
+            alert("Enter email");
+        }
+        if (userRegistration.password === "") {
+            alert("Enter password");
+        } else {
+            console.log("Clicked on sign up button")
+            const response = await SendPostRequest("/users", userRegistration)
+            console.log('hhelo', response)
+        }
+
+
     }
 
 
@@ -53,7 +67,7 @@ const Signup = () => {
                     <PageHeading heading={"Sign Up"} fontSize={"25px"} fontWeight={"bold"} />
                     <p>Create your Account</p>
 
-                    <Form>
+                    <Form >
                         <Input inputType={"text"} placeholder={"Name"} inputFor={"name"}
                             padding={"10px 10px 10px 20px"}
                             required={true}
@@ -66,7 +80,7 @@ const Signup = () => {
                             required={true}
                             onChange={handleInput}
                             name={"email"}
-                            InputCSS={"form-input "}
+                            InputCSS={"foadanchlqp@gmail.comrm-input "}
                         />
                         <Input inputType={"password"} placeholder={"Password"} inputFor={"password"}
                             padding={"10px 10px 10px 20px"}
@@ -75,6 +89,7 @@ const Signup = () => {
                             name={"password"}
                             InputCSS={"form-input "}
                         />
+
                         <Switch text={"I agree to the Terms and Privacy"} defaultValue={false} id={"term-conditions"} handleSwitch={handleSwitch} />
                         <CSButton onClick={signUpBtnClick}
                             style={{ marginBottom: "50px" }} title={"signup"} icon={"+"}
@@ -90,7 +105,7 @@ const Signup = () => {
 
                 </Col>
 
-                <Col lg={8} >
+                <Col lg={8}  >
                     <div className='signuprightimg'>
                         <img alt={"doctor preview"} src={signuprightImg} />
                     </div>
