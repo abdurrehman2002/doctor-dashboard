@@ -96,7 +96,7 @@ function Doctors() {
                         }
                     </Row>
                     <div className='AddDoctorButtonWrapper'>
-                        <Button variant="primary" onClick={() => setShow(true)} className="AddDoctorButton">
+                        <Button onClick={() => setShow(true)} className="AddDoctorButton">
                             <i class="fa fa-address-card-o"></i>
                         </Button>
                     </div>

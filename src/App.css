@@ -478,7 +478,6 @@
   padding: 0 !important;
   box-shadow: 0px 0px 12px 2px rgba(50, 118, 199, 0.75);
 }
-
 .ModalButton i {
   font-size: 40px;
   padding: 18px 23px;
@@ -542,7 +541,6 @@
   margin-bottom: 5px;
   font-weight: 300px;
   position: relative;
-
 }
 
 .modal-TimeInput:hover {
@@ -586,12 +584,6 @@
   border: none;
   color: black;
 }
-
-
-
-
-
-
 
 .variants {
   display: flex;
@@ -750,11 +742,12 @@
   text-align: center;
 }
 
-.DoctorNameWrapper{
+.DoctorNameWrapper {
   display: flex;
   text-align: center;
   justify-content: center;
 }
+
 .DoctorName {
   margin-bottom: 15px;
   font-size: 25px;
@@ -839,9 +832,10 @@
 }
 
 
-.AddDoctorButton:hover{
+.AddDoctorButton:hover {
   background-color: black;
-} 
+}
+
 .AddDoctorButton {
   right: 0px;
   top: 0px;
@@ -856,6 +850,7 @@
   padding: 20px 20px;
 
 }
+
 .AddDoctorButtonWrapper {
   padding: 5px 10px 10px 5px;
   display: flex;
@@ -880,7 +875,6 @@
   margin-bottom: 5px;
   font-weight: 300px;
   position: relative;
-
 }
 
 .addDoctor-speciality:hover {
@@ -943,10 +937,11 @@
   color: white;
 }
 
-.SocialIconLink:hover{
+.SocialIconLink:hover {
   box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
 
 }
+
 .SocialIconLink {
   border-radius: 20px;
   width: 100%;
@@ -965,24 +960,25 @@
 
 .socialIconText {
   display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 10px;
   border: 1px solid #6c757d;
   width: 100%;
   border-radius: 50px;
-  /* align-items: center; */
 }
 
 .socialIconText p {
   font-size: 12px;
   color: #b3b3b3;
-  margin-top: 5px;
-  margin-left: 15px;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .socialIconText i {
   color: #6c7780;
   font-size: 15px;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 0;
 }
 
 .socialLinkWrapper {
@@ -1015,6 +1011,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
 .doctorProfileImage img {
   width: 100px;
   height: 100px;
@@ -1032,8 +1029,491 @@
   background-color: #b7ce63;
   width: 100%;
   box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
-
   justify-content: center;
   border: none;
   color: black;
 }
+
+
+
+
+
+.AddDepartmentHeader {
+  border: none;
+}
+
+.departmentAddImage {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.departmentAddImage img {
+  width: 40px;
+  height: 40px;
+  border-radius: 500px !important;
+  margin-right: 20px;
+}
+
+.addDepartment-Input:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.addDepartment-Input {
+  border-radius: 20px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 300px;
+  position: relative;
+}
+
+.employeeHeading h5 {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.employeeName {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  padding-left: 10px;
+  border: 1px solid #b3b3b3;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.employeeName p {
+  font-size: 12px;
+  color: #b3b3b3;
+  margin: 0;
+}
+
+
+.employeeImageLink:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.employeeImageLink {
+  border-radius: 20px;
+  width: 100%;
+  font-weight: 300px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.addEmployee {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.addEmployee h5 {
+  font-size: 15px;
+}
+
+
+.DeleteEmployeeIcon i:hover {
+  color: white;
+}
+
+.DeleteEmployeeIcon:hover {
+  background-color: #ed5564;
+
+}
+
+.DeleteEmployeeIcon i {
+  padding: 12px;
+  font-size: 20px;
+  color: #ed5564;
+  text-align: center;
+}
+
+.DeleteEmployeeIcon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ed5564;
+  border-radius: 50%;
+  color: white;
+}
+
+
+.addEmployeeIcon i:hover {
+  color: white;
+}
+
+.addEmployeeIcon:hover {
+  background-color: #336efb;
+}
+
+.addEmployeeIcon i {
+  padding: 12px;
+  font-size: 20px;
+  color: #336efb;
+  text-align: center;
+}
+
+.addEmployeeIcon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #336efb;
+  border-radius: 50%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.DepartmentCardWrapper {
+  border-radius: 10px;
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.DepartmentCard {
+  border: none;
+}
+
+.DepartmentName {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.departmentTeamWrapper {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.departmentTeamText {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.teamDoctorImg {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: -10px;
+}
+
+.departmentTeamImg {
+  display: flex;
+}
+
+.teamDoctorImgBtn {
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 11px 15px;
+  margin-right: -10px;
+}
+
+.DepartmentDescription {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.DepartmentMoreBtn {
+  margin-bottom: 25px;
+}
+
+.DepartmentMoreBtn .btn {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+  color: #336cfb;
+  background-color: white;
+}
+
+.DepartmentMoreBtn .btn:hover {
+  color: white;
+  background-color: #336cfb;
+}
+
+.DepartmentMoreBtn i {
+  margin-left: 10px;
+}
+
+.AddDepartmentButton:hover {
+  background-color: blue;
+}
+
+.AddDepartmentButton {
+  right: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 50%;
+  padding: 0 !important;
+  background-color: #336efb;
+  box-shadow: 0px 0px 12px 2px rgba(50, 118, 199, 0.75);
+}
+
+.AddDepartmentButton i {
+  font-size: 35px;
+  padding: 18px 20px;
+}
+
+.AddDepartmentButtonWrapper {
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 30px 0px;
+}
+
+
+/* */
+
+.patientTable tr {
+  border-style: none !important;
+  border-color: white;
+}
+.patientTable thead {
+  font-size: 13px;
+  background-color: #336efb;
+  border-color: white;
+  color: white;
+}
+.patientTable th {
+  border-color: white;
+
+}
+.patientTable td {
+  border-color: white;
+  background-color: #f9f9f9;
+
+}
+.PatientTableActionicons {
+  display: flex;
+  flex-direction: row;
+}
+
+.patientProfileAction i {
+  padding: 12px;
+}
+.patientProfileAction {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  margin-right: 5px;
+}
+.PatientEditAction i {
+  padding: 12px;
+}
+.patientDeleteAction i {
+  padding: 12px;
+}
+.PatientEditAction {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #64b4f5;
+  color: black;
+  margin-right: 5px;
+}
+.patientDeleteAction {
+  cursor: pointer;
+  background-color: #ed5564;
+  border-radius: 50%;
+  color: white;
+}
+
+.patient-Input:hover {
+  box-shadow: 0 18px 24px rgb(0 0 0 / 12%);
+}
+
+.patient-Input {
+  border-radius: 20px;
+  background-color: #ebebeb;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 300px;
+  position: relative;
+}
+.addPatientHeaderBg{
+  border: none;
+}
+.addPatientFooterBg{
+  background-color: #ebebeb;
+  border: none;
+}
+.PatientModalWrapper {
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0px 20px 30px 0px;
+}
+.addPatientBtn {
+  right: 0px;
+  top: 0px;
+  border-radius: 50%;
+  padding: 0 !important;
+  box-shadow: 0px 0px 12px 2px rgba(50, 118, 199, 0.75);
+}
+.addPatientBtn i {
+  font-size: 30px;
+  padding: 18px 23px;
+
+}
+
+.patientProfileImg img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+}
+
+.patientTableName{
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+.patientTableNumber i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #336cfb;
+
+}
+.patientTableNumber p {
+  margin: 0;
+  font-size: 14px;
+  color: #336cfb;
+}
+.patientTableNumber {
+  display: flex;
+  flex-direction: row;
+  height: 57px;
+}
+
+.patientage {
+  font-size: 14px;
+  color: #8d8b8b;
+}
+.patientid{
+  font-size: 14px;
+  color: #8d8b8b;
+}
+.patientlastVisit{
+  font-size: 14px;
+  color: #8d8b8b;
+}
+.patientAddress{
+  font-size: 13px;
+  width: 260px;
+  color: black;
+}
+.patientStatus span{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: #b7ce63;
+}
+
+.PatientProfilePageText{
+  padding: 0px 20px;
+}
+.patientPageTextHeading{
+  font-size: 22px;
+}
+.patientPageTextDate{
+  font-size: 16px;
+  color: #b3b3b3;
+}
+.patientPageTextDescription{
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+
+
+/*  */
+
+.PaymentTableWrapper {
+  padding: 0px;
+  padding: 0px 25px;
+}
+
+
+.paymentTable tr {
+  border-style: none !important;
+  border-color: white;
+}
+.paymentTable thead {
+  font-size: 14px;  
+  background-color: #e8e8e8;
+  color: black;
+}
+.paymentTable th {
+  border-color: white;
+
+}
+.paymentTable td {
+  border-color: white;
+  background-color: #f9f9f9;
+}
+
+.paymentBillNo{
+  font-size: 15px;
+  color: #797d85;
+
+
+}
+.patientPayment{
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+
+}
+.doctorPayment{
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+
+}
+.paymentDate{
+  font-size: 15px;
+  width: 200px;
+  color: #797d85;
+}
+.totalPayment{
+  font-size: 13px;
+  font-weight: bold;
+}
+.paymentCharger{
+  font-size: 15px;
+}
+.paymentTax{
+  font-size: 15px;
+}
+.paymentDiscount{
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+

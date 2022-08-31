@@ -15,6 +15,12 @@ export { default as AppointmentsDataTable } from './AppointmentsDataTable';
 export { default as ModalButton } from './ModalButton';
 export { default as AddDoctors } from './AddDoctors';
 export { default as DoctorsCard } from './DoctorsCard';
+export { default as DepartmentCard } from './DepartmentCard';
+export { default as AddDepartment } from './AddDepartment';
+export { default as PatientsDataTable } from './PatientsDataTable';
+export { default as AddPatient } from './AddPatient';
+export { default as PaymentsDataTable } from './PaymentsDataTable';
+export { default as AddPayment } from './AddPayment';
 
 
 

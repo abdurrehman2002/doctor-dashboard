@@ -12,9 +12,9 @@ function SideNav() {
           <i class="fa fa-user-md"></i>Doctors</Nav.Link>
         <Nav.Link href='/Departments'  className='SideNavDashboard'>
           <i class="fa fa-user-md"></i>Departments</Nav.Link>
-        <Nav.Link className='SideNavDashboard'>
+        <Nav.Link href='/Patients' className='SideNavDashboard'>
           <i class="fa fa-wheelchair"></i>Patients</Nav.Link>
-        <Nav.Link className='SideNavDashboard' >
+        <Nav.Link href='/Payments' className='SideNavDashboard' >
           <i class="fa fa-credit-card"></i>Payments</Nav.Link>
       </div>
     </Nav>

@@ -24,7 +24,7 @@ function DoctorsCard({ doctorData, viewProfile }) {
 
                     <div className='DoctorProfileBtn'>
                         <Button
-                            onClick={() => viewProfile(doctorData.id)}  >View profile</Button>
+                            onClick={() => viewProfile(doctorData.id)} >View profile</Button>
                     </div>
 
                 </Card.Body>

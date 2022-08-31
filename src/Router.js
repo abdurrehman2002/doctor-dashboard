@@ -14,7 +14,10 @@ import {
     Appointments,
     Doctors,
     DoctorProfilePage,
-    Departments
+    Departments,
+    Patients,
+    PatientProfilePage,
+    Payments
 } from './pages'
 
 
@@ -31,6 +34,10 @@ export default function Router() {
                 <Route path="/Doctors" element={<Doctors />} />
                 <Route path="/DoctorProfilePage/:id" element={<DoctorProfilePage />} />
                 <Route path="/Departments" element={<Departments />} />
+                <Route path="/Patients" element={<Patients />} />
+                <Route path="/PatientProfilePage/:id" element={<PatientProfilePage />} />
+
+                <Route path="/Payments" element={<Payments />} />
             </Routes>
         </BrowserRouter>
     );

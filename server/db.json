@@ -1582,20 +1582,10 @@
   "doctors": [
     {
       "firstName": "Dr.",
-      "lastName": "Liam",
-      "specility": "Dentist",
-      "address": "795 Folsom Ave, Suite 6ffffffffffffwhfbfkjehiehfijn",
-      "instagramLink": "rehman@2020",
-      "facebookLink": "rehman@2021",
-      "twitterLink": "rehman@2022",
-      "id": 1
-    },
-    {
-      "firstName": "Dr.",
       "lastName": "Noah",
       "specility": "Nursing",
       "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
-      "instagramLink": "rehman@2020",
+      "instagramLink": "rehman@2022",
       "facebookLink": "rehman@2021",
       "twitterLink": "rehman@2022",
       "id": 2
@@ -1659,6 +1649,321 @@
       "facebookLink": "rehman@2021",
       "twitterLink": "rehman@2022",
       "id": 8
+    }
+  ],
+  "departments": [
+    {
+      "title": "Dentistry",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie.jpg",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "Dr.Noah",
+      "imageLink3": "noah.jpg",
+      "id": 4
+    },
+    {
+      "title": "Laboratory",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie.jpg",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "Dr.Noah",
+      "imageLink3": "noah.jpg",
+      "id": 5
+    },
+    {
+      "title": "Gastrology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie.jpg",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "Dr.Noah",
+      "imageLink3": "noah.jpg",
+      "id": 6
+    },
+    {
+      "title": "Pediatrician",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie.jpg",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "Dr.Noah",
+      "imageLink3": "noah.jpg",
+      "id": 8
+    },
+    {
+      "title": "Cardiology",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie.jpg",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "",
+      "imageLink3": "noah.jpg",
+      "id": 9
+    }
+  ],
+  "patients": [
+    {
+      "image": "",
+      "patientName": "Liam",
+      "id": 1,
+      "age": "42",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-30T12:36:04.257Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Olivia",
+      "id": 2,
+      "age": "20",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-30T13:48:24.843Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ava",
+      "id": 3,
+      "age": "24",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-30T13:48:24.843Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Isabella",
+      "id": 4,
+      "age": "19",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-30T13:48:24.843Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Mia",
+      "id": 5,
+      "age": "21",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-30T13:48:24.843Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Liam",
+      "id": 6,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ali",
+      "id": 7,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ali",
+      "id": 8,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ali",
+      "id": 9,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ahmad",
+      "id": 10,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Hassan",
+      "id": 11,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Hussnain",
+      "id": 12,
+      "age": "36",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Bawa",
+      "id": 13,
+      "age": "18",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Arsalan",
+      "id": 14,
+      "age": "24",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Rehman",
+      "id": 15,
+      "age": "20",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Hamza",
+      "id": 16,
+      "age": "19",
+      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:29:35.302Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Ava",
+      "id": 17,
+      "age": "24",
+      "address": "Aria Tower E11 Markaz",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:52:56.595Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Liam",
+      "id": 18,
+      "age": "24",
+      "address": "Aria Tower E11 Markaz",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:52:56.595Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Olivia",
+      "id": 19,
+      "age": "23",
+      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:52:56.595Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Olivia2",
+      "id": 20,
+      "age": "21",
+      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:52:56.595Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Emma",
+      "id": 21,
+      "age": "25",
+      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T06:52:56.595Z",
+      "status": "Approved"
+    },
+    {
+      "image": "",
+      "patientName": "Liam",
+      "id": 22,
+      "age": "20",
+      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+      "number": "0126595743",
+      "lastVisit": "2022-08-31T07:27:42.842Z",
+      "status": "Approved"
+    }
+  ],
+  "payments": [
+    {
+      "BillNo": "138",
+      "patient": "Liam Jouns",
+      "doctor": "Dr. Sophie",
+      "date": "18 Dec 2019",
+      "charger": "$155",
+      "tax": "10%",
+      "discount": "$5",
+      "total": "$160",
+      "id": 5
+    },
+    {
+      "BillNo": "137",
+      "patient": "Priya Patel",
+      "doctor": "Dr. Liam",
+      "date": "5 Oct 2019",
+      "charger": "$120",
+      "tax": "10%",
+      "discount": "$5",
+      "total": "$125",
+      "id": 7
+    },
+    {
+      "BillNo": "136",
+      "patient": "Mayank Jani",
+      "doctor": "Dr. Noah",
+      "date": "1 Oct 2019",
+      "charger": "$70",
+      "tax": "10%",
+      "discount": "$5",
+      "total": "$75",
+      "id": 8
+    },
+    {
+      "BillNo": "135",
+      "patient": "Jenish Shah",
+      "doctor": "Dr. Sophie",
+      "date": "23 Sep 2019",
+      "charger": "$43",
+      "tax": "10%",
+      "discount": "$5",
+      "total": "$48",
+      "id": 9
     }
   ]
 }

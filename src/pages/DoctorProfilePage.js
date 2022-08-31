@@ -7,7 +7,6 @@ import { SendGetRequest, SendPutRequest } from '../http';
 
 
 import DoctorProfileImg from '../assets/images/addDoctorImg.jpg';
-
 function DoctorProfilePage({ setShow }) {
     let params = useParams();
     console.log(params.id)
@@ -83,8 +82,6 @@ function DoctorProfilePage({ setShow }) {
                         fontSize={"16px"} color={"#b3b3b3"} />
                     <SideNav />
                 </Col>
-
-
 
                 <Col lg={9} className="p-0">
                     <Header />
