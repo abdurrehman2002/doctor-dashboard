@@ -4,13 +4,13 @@ import { AddPatient } from '.';
 import profileImg from '../assets/images/addPatientImg.jpg';
 import { SendPutRequest, SendDeleteRequest } from '../http';
 import { format } from 'date-fns';
-import _ from "lodash";
+// import _ from "lodash";
 
 
 
 function PatientsDataTable(props) {
 
-    const pageSize = 10;
+    // const pageSize = 10;
 
 
     const { patientData, getPatients, tableColumData, viewProfile } = props
@@ -53,9 +53,9 @@ function PatientsDataTable(props) {
 
     }
 
-    const pageCount = patientData ? Math.ceil(patientData.length / pageSize) : 0;
-    if (pageCount === 1) return null;
-    const pages = _.range(1, pageCount + 1);
+    // const pageCount = patientData ? Math.ceil(patientData.length / pageSize) : 0;
+    // if (pageCount === 1) return null;
+    // const pages = _.range(1, pageCount + 1);
 
 
     return (
@@ -116,7 +116,7 @@ function PatientsDataTable(props) {
                 </Table>
 
 
-                <nav className='d-flex justify-content-center'>
+                {/* <nav className='d-flex justify-content-center'>
                     <ul className='pagination'>
                         {
                             pages.map((page) => (
@@ -125,7 +125,7 @@ function PatientsDataTable(props) {
                             ))
                         }
                     </ul>
-                </nav>
+                </nav> */}
 
 
                 <AddPatient show={show} setShow={setShow}

@@ -1891,26 +1891,6 @@
     },
     {
       "image": "",
-      "patientName": "Olivia2",
-      "id": 20,
-      "age": "21",
-      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
-      "number": "0126595743",
-      "lastVisit": "2022-08-31T06:52:56.595Z",
-      "status": "Approved"
-    },
-    {
-      "image": "",
-      "patientName": "Emma",
-      "id": 21,
-      "age": "25",
-      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
-      "number": "0126595743",
-      "lastVisit": "2022-08-31T06:52:56.595Z",
-      "status": "Approved"
-    },
-    {
-      "image": "",
       "patientName": "Liam",
       "id": 22,
       "age": "20",

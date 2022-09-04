@@ -8,6 +8,11 @@ import { useNavigate } from 'react-router-dom';
 
 
 function Patients() {
+
+    const [page, setPage] = useState(1);
+    console.log("pageno", page)
+
+
     const navigate = useNavigate();
     const viewProfile = (id) => {
         debugger
@@ -17,8 +22,8 @@ function Patients() {
 
     const [patientData, setpatientData] = useState([])
     const [show, setShow] = useState(false);
-    var today = new Date(),
-        date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    var today = new Date()
+    // date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     console.log(today)
 
     const [addPatient, setAddPatient] = useState({
@@ -38,7 +43,6 @@ function Patients() {
     }, [])
 
 
-
     async function addPatientClick() {
         console.log("Clicked on Modal button")
         const response = await SendPostRequest("/patients", addPatient)
@@ -49,9 +53,14 @@ function Patients() {
 
 
     const getPatients = async () => {
-        const response = await SendGetRequest("/patients")
-        setpatientData(response.data)
-        console.log("response", response)
+        const response = await SendGetRequest(`/patients?_page=${page}&_limit=5`)
+        if (response.data.length > 0) {
+            setpatientData(response.data)
+            console.log("response", response)
+        } if(response.data.length===0){
+            setPage(page - 1)
+            
+        }
     }
 
 
@@ -81,14 +90,33 @@ function Patients() {
                         viewProfile={viewProfile}
                     />
 
+
+
                     <div className='PatientModalWrapper'>
                         <Button variant="primary" onClick={() => setShow(true)} className="addPatientBtn">
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </Button>
                     </div>
+
+
+                    <div className='d-flex justify-content-center mb-5'>
+                        <Button className='PaginationPrevBtn'
+                            onClick={() => {
+                                setPage(page - 1);
+                                getPatients()
+                            }
+                            }>Prev</Button>
+                        <Button className='PaginationNextBtn'
+                            onClick={() => {
+                                setPage(page + 1)
+                                getPatients()
+                            }}>Next</Button>
+                    </div>
+
+
+
                 </Col>
             </Row>
-
             <AddPatient show={show} setShow={setShow} addPatient={addPatient}
                 setAddPatient={setAddPatient} addPatientClick={addPatientClick} />
 
