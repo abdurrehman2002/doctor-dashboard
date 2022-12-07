@@ -1649,6 +1649,16 @@
       "facebookLink": "rehman@2021",
       "twitterLink": "rehman@2022",
       "id": 8
+    },
+    {
+      "firstName": "Dr.",
+      "lastName": "Sohail",
+      "specility": "Gynecologist",
+      "address": "795 Folsom Ave, Suite 600 San Francisco, CADGE 94107",
+      "instagramLink": "rehman@2020",
+      "facebookLink": "rehman@2021",
+      "twitterLink": "rehman@2022",
+      "id": 9
     }
   ],
   "departments": [
@@ -1696,6 +1706,15 @@
       "DoctorName": "",
       "imageLink3": "noah.jpg",
       "id": 9
+    },
+    {
+      "title": "Pediatrician",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore enim, nemo nihil non omnis temporibus? Blanditiis culpa labore velit.",
+      "imageLink": "sophie@2021",
+      "imageLink2": "liam.jpg",
+      "DoctorName": "",
+      "imageLink3": "",
+      "id": 10
     }
   ],
   "patients": [
@@ -1834,16 +1853,6 @@
       "patientName": "Arsalan",
       "id": 14,
       "age": "24",
-      "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
-      "number": "0126595743",
-      "lastVisit": "2022-08-31T06:29:35.302Z",
-      "status": "Approved"
-    },
-    {
-      "image": "",
-      "patientName": "Rehman",
-      "id": 15,
-      "age": "20",
       "address": "71 Pilgrim Avenue Chevy Chase, MD 20815",
       "number": "0126595743",
       "lastVisit": "2022-08-31T06:29:35.302Z",
